@@ -1,18 +1,11 @@
-"""
-This is a base webapp using Flask
-
-Tutorial: https://code.visualstudio.com/docs/python/tutorial-flask
-"""
-
-
+"""Routings and views"""
 from datetime import datetime
 
-from flask import Flask, render_template
+from flask import render_template
 
-app = Flask(__name__)
+from . import app
 
 
-# Replace the existing home function with the one below
 @app.route("/")
 def home():
     return render_template("home.html")
