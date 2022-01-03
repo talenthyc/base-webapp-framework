@@ -5,4 +5,4 @@ https://github.com/microsoft/python-sample-vscode-flask-tutorial/blob/master/sta
 from src.webapp import app
 
 if __name__ == "__main__":
-    app.run()
+    app.run(host="0.0.0.0", port=5000, debug=False)
